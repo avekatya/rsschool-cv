@@ -16,3 +16,57 @@ I used to work as a Sales Manager which means:
 
 ***Technologies and frameworks***   
 Technologies that I use include **HTML, CSS, JavaScript**.
+
+***My code example***   
+
+```
+let operationButtons = document.getElementsByClassName('operation-button');
+
+
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+
+
+function makeOperation(operationCode) {
+    const number1 = Number(input1.value);
+    const number2 = Number(input2.value);
+    let result;
+    if (operationCode === '+') {
+        result = number1 + number2;
+    }
+    else if (operationCode === '-') {
+        result = number1 - number2;
+    }
+    else if (operationCode === '*') {
+        result = number1 * number2;
+    }
+    else if (operationCode === '/'){
+        result = number1 / number2;
+    }
+    else {
+        window.alert("operation is unknown");
+    }
+
+   window.alert(result);
+}
+
+function onOperationButtonClick (eventObject) {
+    let clickedElement = eventObject.currentTarget;
+    let operation = clickedElement.innerHTML;
+    makeOperation(operation);
+}
+
+for (let operationButton of operationButtons) {
+        operationButton.addEventListener('click', onOperationButtonClick); 
+    } 
+ ```
+***Working experience***  
+_I haven't got relevant working experience by now. This section will be updated soon though._
+
+***Education*** 
+- Bachelor's degree in Intercultural Communication (MSLU);
+- IT Kamasutra video course on JS;
+- HTML Academy web development course.
+
+***English level***    
+C1+
