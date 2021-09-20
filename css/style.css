@@ -122,3 +122,26 @@ code {
     padding: 0;
     margin: 100px 100px 0px 100px; 
 }
+
+.footer-menu {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black; 
+    font-size: 30px;
+    font-weight: 500; 
+}
+
