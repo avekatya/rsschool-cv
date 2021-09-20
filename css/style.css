@@ -1,0 +1,166 @@
+* {
+    font-family: Papyrus, fantasy;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html, body {
+    background-color: #DCDCDC;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+  
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    margin: 0; 
+    padding: 30px 15px 0 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.3rem;
+    font-weight: 500; 
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.basic-info {
+    flex-direction: row;
+    margin: 20px 30px;
+    padding: 0;
+    gap: 8%;
+}
+  
+.basic-info ul {
+    list-style: none;
+}
+
+.profile-photo {
+    width: 43%;
+    border-radius: 15%;
+}
+
+.about-myself, .technologies {
+    padding: 0;
+    width: 50%;
+    height: 70%;
+    margin: 3% auto;
+    align-items: start;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.goals, .education, .eng {
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    border-radius: 10%;
+    margin-bottom: 30px;
+}
+
+.goals ul, .education ul {
+    list-style: inside;
+}
+
+.experience {
+    padding: 0;
+    margin: 0;
+}
+
+.stack, .technologies h4 {
+    margin-bottom: 20px;
+}
+
+.code {
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    overflow-y: scroll;
+    min-width: 150px;
+    height: 400px;
+}
+
+code {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.video {
+    text-align: center;
+    height: 80%;
+    padding-top: 20px;
+}
+
+.video iframe { 
+    position: relative; 
+    width: 95%; 
+    height: 95%; 
+}
+
+.footer-menu {
+    margin-top: -5%;
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black; 
+    font-size: 30px;
+    font-weight: 500; 
+}
+
+@media (max-width: 480px) {
+    .basic-info {
+        flex-direction: column;
+    }
+    .profile-photo {
+        width: 260px;
+    }
+    .about-myself, .technologies {
+        width: 95%;
+    }
+    code {
+        font-size: 0.8rem;
+    }
+}
