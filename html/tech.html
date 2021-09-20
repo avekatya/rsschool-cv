@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Technologies and Frameworks</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Katya Averchenko</div>   
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./myself.html">About Myself</a></li>
+                <li><a href="#">Technologies and Frameworks</a></li>
+                <li><a href="./video.html">Video Presentation</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="technologies">
+        <h3><b>Technologies and frameworks</b></h3>
+        <p class="stack">Technologies that I use include <b>HTML, CSS, JavaScript</b>.</p>
+        <h4><b>My code example</b></h4>
+        <div class="code">
+            <code>
+                let operationButtons = document.getElementsByClassName('operation-button');<br/>
+                const input1 = document.getElementById('input1');<br/>
+                const input2 = document.getElementById('input2');<br/>
+                function makeOperation(operationCode) {<br/>
+                    const number1 = Number(input1.value);<br/>
+                    const number2 = Number(input2.value);<br/>
+                    let result;<br/>
+                    if (operationCode === '+') {<br/>
+                        result = number1 + number2;<br/>
+                        }<br/>
+                    else if (operationCode === '-') {<br/>
+                        result = number1 - number2;<br/>
+                        }<br/>
+                    else if (operationCode === '*') {<br/>
+                        result = number1 * number2;<br/>
+                        }<br/>
+                    else if (operationCode === '/'){<br/>
+                        result = number1 / number2;<br/>
+                        }<br/>
+                    else {<br/>
+                        window.alert("operation is unknown");<br/>
+                        }<br/>
+
+                    window.alert(result);<br/>
+                    }<br/>
+
+                function onOperationButtonClick (eventObject) {<br/>
+                    let clickedElement = eventObject.currentTarget;<br/>
+                    let operation = clickedElement.innerHTML;<br/>
+                    makeOperation(operation);<br/>
+                }<br/>
+
+                for (let operationButton of operationButtons) {<br/>
+                    operationButton.addEventListener('click', onOperationButtonClick);<br/> 
+                } 
+            </code>
+        </div>
+    </section> 
+</body>
+</html>

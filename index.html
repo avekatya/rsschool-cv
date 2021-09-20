@@ -2,94 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Katya's CV</title>
 </head>
 <body>
-    <div class="cv">
-        <section class="basic-info">
-            <img class="profile-photo" src="pic.jpg" alt="My picture"/>
-            <div class="contact-info">
-                <h2 class="name">Katsiaryna Averchanka</h2>
-                <p class="contacts">email: katyaaverchenko@gmail.com<br/>mobile phone: +375291121296</p>
-            </div>
-        </section>
-        <section class="about-myself">
-            <h3><b>A bit about myself</b></h3>
-            <div class="goals">My goal is to learn JS well enough to start working as a Front-end developer by the beginning of autumn.<br/>I used to work as a Sales Manager which means:
-                <ul class="strengths">
-                    <li class="strengths-item">I know how to <b>sell myself</b> (I mean I know how to <b>do well</b> in an interview);</li>
-                    <li class="strengths-item">my <b>English level is high</b>;</li>
-                    <li class="strengths-item">I've got great <b>soft skills</b> (plus I <em>listen to people</em> and I <em>hear them</em>);</li>
-                    <li class="strengths-item">I'm not afraid of <b>advancing my ideas</b>;</li>
-                    <li class="strengths-item">I'm able to <b>handle stress</b> (nothing is more stressful than sales, <em>imho</em>).</li>
-                </ul>
-            </div>
-            <div class="education">
-                <h4><b>Education</b></h4>
-                <div class="ed-list">
-                    <ul class="edu-list">
-                        <li class="edu-item">Bachelor's degree in Intercultural Communication (MSLU);</li>
-                        <li class="edu-item">IT Kamasutra video course on JS;</li>
-                        <li class="edu-item">HTML Academy web development course.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="eng">
-                <h4><b>English level</b></h4>
-                <p class="eng-level">C1+</p>
-            </div>
-            <div class="experience">
-                <h4><b>Working experience</b></h4>
-                <p class="work"><em>I haven't got relevant working experience up untill now. This section will be updated soon though.</em> </p>   
-            </div>
-        </section>
-        <section class="technologies">
-            <h3><b>Technologies and frameworks</b></h3>
-            <p class="stack">Technologies that I use include <b>HTML, CSS, JavaScript</b>.</p>
-            <h4><b>My code example</b></h4>
-            <div class="code">
-                <code>
-                    let operationButtons = document.getElementsByClassName('operation-button');<br/>
-                    const input1 = document.getElementById('input1');<br/>
-                    const input2 = document.getElementById('input2');<br/>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./html/myself.html">About Myself</a></li>
+                <li><a href="./html/tech.html">Technologies and Frameworks</a></li>
+                <li><a href="./html/video.html">Video Presentation</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="basic-info">
+        <img class="profile-photo" src="./img/main-pic.jpg" alt="My picture"/>
+        <div class="contact-info">
+            <h2 class="name">Katsiaryna Averchanka</h2>
+            <ul>
+                <li><a>katyaaverchenko@gmail.com</a></li>
+                <li><a>+375291121296</a></li>
+                <li><a href="https://github.com/avekatya">github</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
 
-
-                    function makeOperation(operationCode) {<br/>
-                        const number1 = Number(input1.value);<br/>
-                        const number2 = Number(input2.value);<br/>
-                        let result;<br/>
-                        if (operationCode === '+') {<br/>
-                            result = number1 + number2;<br/>
-                            }<br/>
-                        else if (operationCode === '-') {<br/>
-                            result = number1 - number2;<br/>
-                            }<br/>
-                        else if (operationCode === '*') {<br/>
-                            result = number1 * number2;<br/>
-                            }<br/>
-                        else if (operationCode === '/'){<br/>
-                            result = number1 / number2;<br/>
-                            }<br/>
-                        else {<br/>
-                            window.alert("operation is unknown");<br/>
-                            }<br/>
-
-                        window.alert(result);<br/>
-                        }<br/>
-
-                    function onOperationButtonClick (eventObject) {<br/>
-                        let clickedElement = eventObject.currentTarget;<br/>
-                        let operation = clickedElement.innerHTML;<br/>
-                        makeOperation(operation);<br/>
-                    }<br/>
-
-                    for (let operationButton of operationButtons) {<br/>
-                        operationButton.addEventListener('click', onOperationButtonClick);<br/> 
-                    } 
-                </code>
-            </div>
-        </section>
-    </div>
+    </footer>
 </body>
 </html>
